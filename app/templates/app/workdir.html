@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Директория</title>
+</head>
+<body>
+    <h1>Список файлов</h1>
+    {% for item in files %}
+        {{item}}
+        <br>
+    {% endfor %}
+    <p><a href="{% url 'home' %}"><button>На главную</button></a></p>
+</body>
+</html>
